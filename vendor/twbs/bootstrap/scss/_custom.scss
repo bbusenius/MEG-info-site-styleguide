@@ -1,0 +1,92 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark: #212121 !default;
+$gray: #757575 !default;
+$gray-light: #c6c5c5 !default;
+$gray-lighter: #eceeef !default;
+$gray-lightest: #f5f5f5 !default;
+
+$brand-primary: #3ea443 !default; // #66bb6a 
+$brand-inverse: #00796b !default;
+$brand-secondary: $brand-inverse !default;
+$brand-danger: #b71c1c !default;
+
+.bg-gray-dark {
+    background-color: $gray-dark;
+}
+.bg-gray {
+    background-color: $gray;
+}
+.bg-gray-light {
+    background-color: $gray-light;
+}
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
+
+$font-size-h1: 2.80rem !default;
+$font-size-h2: 2.30rem !default;
+$font-size-h3: 1.95rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: 1rem !default;
+
+$headings-color: darken($brand-secondary, 8%) !default;
+
+$white: #fff !important; 
+.text-white,
+.bg-inverse {
+  color: $white;
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+  }
+}
+
+
+ul {
+    list-style: square;
+}
+
+
+// Contextual colors
+
+//@include text-emphasis-variant('.text-secondary', $brand-secondary);
+.text-secondary {
+    color: $brand-secondary;
+}
+
+
+// Cards 
+//
+// Custom styles for cards
+
+.card-header i {
+    font-size: 4rem;
+}
+.card-inverse {
+    a {
+        color: #fff;
+    }
+}
+
+// Jumbotron 
+//
+// Custom styles for the jumbotron
+
+.jumbotron {
+    background: url(../../images/banner.jpg) no-repeat center center; 
+    background-size: cover;
+    margin-bottom: 0 !important;
+}
