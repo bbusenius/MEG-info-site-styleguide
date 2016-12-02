@@ -1,0 +1,29 @@
+{
+  "logo": "[MEG]",
+  "tagline": "Mobile Encryption Gateway",
+  "nav": {
+    "one": "Home",
+    "two": "About",
+    "three": "Features",
+    "four": "Contact"
+  },
+  "jumbotron": {
+    "h1": "[MEG] Mobile Encryption Gateway",
+    "h2": "Best effort email encryption for the masses",
+    "p1": "End to end encryption shouldn't be difficult. MEG makes it easy! MEG is an app you install on your phone. It works in combination with an email program on your computer. All encryption happens on the phone but the email is sent from your computer. This allows you to send encrypted emails from any computer while keeping all your private data in one place."
+  },
+  "button": {
+    "one": "Link Test",
+    "two": "Button",
+    "three": "Input",
+    "four": "Learn more"
+  },
+  "sidebar": {
+    "one": "About MEG",
+    "two": "Primary components",
+    "three": "Cell phone app",
+    "four": "Federated servers",
+    "five": "Client plugin",
+    "six": "How MEG encrypts"
+  }
+}

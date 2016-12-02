@@ -1,0 +1,61 @@
+{{> molecules-primary-navigation }}
+
+<div class="container-fluid px-0">
+  <div class="row-fluid bg-faded py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-9">
+          <h1 id="about">About MEG</h1>
+          <p class="lead">MEG combines elements of distributed and PKI infrastructures to solve many of the problems with current email encryption options.</p>
+          <h2>MEG is</h2>
+          <ul>
+            <li>Best effort - it will encrypt when it can, but won't prevent you from communicating</li>
+            <li>Transparent - It will give you as much information as you want about what its doing and will prompt a user before making any insecure choices</li>
+            <li>Federated - A company can control keys like PKI but can interact securely with individuals who want to stay unassociated</li>
+          </ul>
+
+          <h2 id="primary-components">Primary components</h2>
+          <ol>
+            <li>Cell phone app</li>
+            <li>Federated servers</li>
+            <li>Client plugin (Outlook, Gmail, Thunderbird, etc.)</li>
+          </ol>
+
+          <h3 id="phone-app">Cell phone app</h3>
+          <p>Velit quae optio quis autem sequi. Autem saepe et quae sed quo quia voluptate optio. Aliquam nemo sint omnis magni consequuntur voluptatem cumque. Voluptate nesciunt quas voluptates. Eligendi voluptas occaecati ut vel odit at deserunt.</p>
+
+          <h3 id="federated-servers">Federated servers</h3>
+          <p>The MEG server is a simple daemon process on an internet connected machine.  The daemon has three primary responsibilities:</p>
+          <ol>
+            <li>It tracks IP addresses for both the mobile app and client plugins 
+            via low bandwidth "heartbeat" requests</li>
+            <li>It tracks and distributes public keys for authorized users</li>
+            <li>It keeps and distributes revocation lists</li>
+          </ol>
+
+          <p>MEG servers must keep an up to date list of all other MEG servers that all of its associated mobile apps have seen.</p>
+
+          <p>A MEG federated server can be fairly transient. All data that is on the server exists somewhere else, so in the event of a server failure, clients can populate data on a new server or fall back to a MEG master server.</p>
+
+          <p>A fourth responsibility is to interface with legacy PGP public key servers to query for public keys and share revocation lists.</p>
+
+          <h3 id="client-plugin">Client plugin</h3>
+          <p>Assumenda incidunt aut ipsa eligendi voluptas ipsam. Voluptas placeat repudiandae quia ut ut voluptates vel nulla. Laudantium ut quod rerum occaecati velit. Explicabo natus exercitationem fuga in. Culpa est delectus sequi animi repellat voluptatibus labore.</p>
+
+          <h2 id="meg-encrypts">How MEG encrypts a message</h2>
+          <ol>
+            <li>The client plugin reaches out to the cell phone (as needed, through the server relay) with unencrypted data.</li>
+            <li>Data travels between the client application plugin and the cell phone app via an encrypted channel.</li>
+            <li>A MEG federated server acts as an intermediary as needed in client -> smartphone communications.</li>
+            <li>The cell phone app does the work of encrypting the message, then returning it to the client for storage and delivery.</li>
+          </ol>
+        </div><!--/.col*-->
+        <div class="col-sm-12 col-md-3 pt-3">
+          {{> molecules-sidebar-nav }}
+        </div><!--/.col*-->
+      </div><!--/.row-->
+    </div><!--/.containter-->
+  </div><!--/.row-fluid-->
+
+  {{> molecules-footer}}
+</div><!--</.container-fluid-->

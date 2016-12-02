@@ -1,0 +1,9 @@
+/*
+ * Styles for Pattern Lab (not the patterns).
+ */
+.patternLink {
+    color: #666;
+}
+.sg-tools-toggle {
+    font-size: %60 !important;
+}
